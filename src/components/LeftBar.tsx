@@ -8,35 +8,28 @@ export default function LeftBar() {
     { platform: "Instagram", link: "https://www.instagram.com/abdulwasaydogar/", icon: <FaInstagram /> },
     { platform: "Twitter", link: "https://twitter.com/AbdulWasaDogar", icon: <FaTwitter /> },
     { platform: "Linkedin", link: "https://www.linkedin.com/in/abdul-wasay-6013b0269/", icon: <FaLinkedin /> },
-    { platform : "GithUb" , link: "https://github.com/AbdulWasay2568" , icon: <FaGithub/>}
+    { platform : "Github" , link: "https://github.com/AbdulWasay2568" , icon: <FaGithub/>}
   ];
 
   return (
-    <div className="text-white min-h-screen min-w-72 flex flex-col">
-      <div className="bg-[#121212] rounded-lg mx-1 mt-2 flex flex-col gap-4">
-        <div className="px-4 pb-4">
-          {socialMedia.map((social, index) => (
-            <div
-              key={index}
-              className="flex items-center p-3 cursor-pointer mb-4 hover:bg-[#223434] mt-5 rounded-lg transition duration-300 "
-            >
+
+    <div className="w-full lg:w-1/4 flex flex-col items-center text-zinc-200">
+          <div className="bg-[#121212] rounded-lg w-full p-4 shadow">
+            {socialMedia.map((social, index) => (
               <a
+                key={index}
                 href={social.link}
                 target="_blank"
                 rel="noopener noreferrer"
-                className="flex items-center w-full"
+                className="flex items-center p-3 cursor-pointer mb-4 hover:bg-[#223434] rounded-lg transition duration-300 w-full"
               >
-                <div className="w-14 h-14 mr-4flex items-center justify-center p-2 flex-row">
-                  {/* Dynamic icons based on platform */}
+                <div className="flex items-center gap-4 text-lg">
                   {social.icon}
-                  <p className="">{social.platform}</p>
+                  <p>{social.platform}</p>
                 </div>
-
               </a>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
-      </div>
-    </div>
   );
 }

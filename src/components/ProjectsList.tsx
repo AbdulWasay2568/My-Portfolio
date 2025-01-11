@@ -1,5 +1,7 @@
 import spotify from '../assets/Images/Projects/spotify-clone.gif';
 import dominos from '../assets/Images/Projects/dominos.png';
+import objectDetection from '../assets/Images/Projects/object-detection.png';
+import eCommerce from '../assets/Images/Projects/e-commerce.jpg'
 
 export default function ProjectsList() {
   const data = [
@@ -20,19 +22,27 @@ export default function ProjectsList() {
     },
     {
       id: 3,
-      title: 'Amazon Clone',
+      title: 'Object Detection and Classification',
       techStack:
-        'NodeJs, Express, Mongoose, Next.js 13, Next Auth, React Hook Form, Typescript, Tailwind CSS',
-      imageUrl: spotify,
-      href: '#',
+        'YOLO v8',
+      imageUrl: objectDetection,
+      href: 'https://github.com/AbdulWasay2568/Object-Detection-and-Classification',
     },
     {
       id: 4,
+      title: ' Eccomerce Website',
+      techStack: 'React.js, Typescript, Tailwind CSS, Express.js, Postgre SQL, Prisma ORM',
+      imageUrl: eCommerce,
+      href: 'https://github.com/AbdulWasay2568/Ecommerce-Full-Stack',
+    },
+    {
+      id: 5,
       title: ' DALL·E Clone',
       techStack: 'OpenAI, Nodejs, Express, Mongoose, ReactJS, Tailwind CSS',
       imageUrl: spotify,
       href: '#',
     },
+
   ];
   
   
