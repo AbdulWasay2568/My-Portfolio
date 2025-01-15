@@ -1,4 +1,4 @@
-import ProfileSection from '../components/Profile';
+import ProfileSection from '../components/ProfileSection';
 import LeftBar from '../components/LeftBar';
 import NavBar from '../components/NavBar';
 
