@@ -2,6 +2,7 @@ import spotify from '../assets/Images/Projects/spotify-clone.gif';
 import dominos from '../assets/Images/Projects/dominos.png';
 import objectDetection from '../assets/Images/Projects/object-detection.png';
 import eCommerce from '../assets/Images/Projects/e-commerce.jpg'
+import youtube from '../assets/Images/Projects/youtube.jpg';
 
 export default function ProjectsList() {
   const data = [
@@ -37,10 +38,10 @@ export default function ProjectsList() {
     },
     {
       id: 5,
-      title: ' DALL·E Clone',
-      techStack: 'OpenAI, Nodejs, Express, Mongoose, ReactJS, Tailwind CSS',
-      imageUrl: spotify,
-      href: '#',
+      title: ' YouTube Web Clone',
+      techStack: 'React.js, Typescript, Tailwind CSS',
+      imageUrl: youtube,
+      href: 'https://github.com/AbdulWasay2568/YouTube-Clone',
     },
 
   ];

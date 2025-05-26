@@ -1,4 +1,4 @@
-import ProfileSection from '../components/ProfileSection'
+import ProfileSection from '../components/ProfileSection';
 import LeftBar from '../components/LeftBar';
 import NavBar from '../components/NavBar';
 import ProjectsList from '../components/ProjectsList';
@@ -6,18 +6,21 @@ import SkillsList from '../components/SkillsList';
 
 export default function Home() {
   return (
-    <div className="bg-black text-white font-semibold flex flex-col justify-between min-h-screen w-full">
+    <div className="bg-[#0f0f0f] text-white font-sans flex flex-col min-h-screen w-full">
+      {/* Top Navigation Bar */}
       <NavBar />
 
-      <div className="flex flex-col lg:flex-row gap-4 px-4 py-2 mt-16">
-        <LeftBar/>
+      {/* Main Content */}
+      <div className="flex flex-col lg:flex-row gap-6 px-4 py-6 mt-16">
+        {/* Left Sidebar */}
+        <LeftBar />
 
-        <div className="w-full lg:w-3/4 flex-col justify-center">
+        {/* Central Content */}
+        <div className="w-full lg:w-3/4 flex flex-col gap-10">
           <ProfileSection />
-          <ProjectsList/>
-          <SkillsList/>
+          <ProjectsList />
+          <SkillsList />
         </div>
-
       </div>
     </div>
   );
