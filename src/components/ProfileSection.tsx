@@ -1,4 +1,3 @@
-import React from 'react';
 import abdulwasay from '../assets/Images/abdulwasay.jpg';
 
 export default function ProfileSection() {
