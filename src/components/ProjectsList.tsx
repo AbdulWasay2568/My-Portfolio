@@ -19,7 +19,7 @@ export default function ProjectsList() {
       techStack:
         'React.js, Typescript, Tailwind CSS',
         imageUrl: spotify,
-        href: 'https://github.com/AbdulWasay2568/Spotify-Clone',
+        href: 'https://spotify-clone-black-two.vercel.app/',
     },
     {
       id: 3,
