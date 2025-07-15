@@ -3,6 +3,7 @@ import dominos from '../assets/Images/Projects/dominos.png';
 import objectDetection from '../assets/Images/Projects/object-detection.png';
 import eCommerce from '../assets/Images/Projects/e-commerce.jpg'
 import youtube from '../assets/Images/Projects/youtube.jpg';
+import whatsApp from '../assets/Images/Projects/whatsapp.jpg';
 
 export default function ProjectsList() {
   const data = [
@@ -23,6 +24,13 @@ export default function ProjectsList() {
     },
     {
       id: 3,
+      title: 'WhatsApp Clone',
+      techStack: 'React.js, TypeScript, Tailwind CSS, Socket.IO, WebRTC, Express.js, PostgreSQL, Prisma ORM',
+      imageUrl: whatsApp,
+      href: 'https://github.com/AbdulWasay2568/WhatsApp-Web-Clone',
+    },
+    {
+      id: 4,
       title: 'Object Detection and Classification',
       techStack:
         'YOLO v8',
@@ -30,14 +38,14 @@ export default function ProjectsList() {
       href: 'https://github.com/AbdulWasay2568/Object-Detection-and-Classification',
     },
     {
-      id: 4,
+      id: 5,
       title: ' Eccomerce Website',
       techStack: 'React.js, Typescript, Tailwind CSS, Express.js, Postgre SQL, Prisma ORM',
       imageUrl: eCommerce,
       href: 'https://github.com/AbdulWasay2568/Ecommerce-Full-Stack',
     },
     {
-      id: 5,
+      id: 6,
       title: ' YouTube Web Clone',
       techStack: 'React.js, Typescript, Tailwind CSS',
       imageUrl: youtube,
@@ -59,7 +67,7 @@ return (
         alt="spotify"
         width={700}
         height={700}
-        className="aspect-video object-cover"
+        className="object-cover h-48 w-full hover:scale-105 transition-transform duration-300 ease-in-out rounded-t-lg"
       />
       <div className="flex flex-col px-4 py-2 h-24">
         <div className="flex font-bold">{card.title}</div>
