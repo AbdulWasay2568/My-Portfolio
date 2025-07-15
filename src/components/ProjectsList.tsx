@@ -3,7 +3,7 @@ import dominos from '../assets/Images/Projects/dominos.png';
 import objectDetection from '../assets/Images/Projects/object-detection.png';
 import eCommerce from '../assets/Images/Projects/e-commerce.jpg'
 import youtube from '../assets/Images/Projects/youtube.jpg';
-import whatsApp from '../assets/Images/Projects/whatsapp.jpg';
+import whatsApp from '../assets/Images/Projects/WhatsApp.jpg';
 
 export default function ProjectsList() {
   const data = [
