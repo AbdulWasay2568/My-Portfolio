@@ -3,6 +3,7 @@ import LeftBar from '../components/LeftBar';
 import NavBar from '../components/NavBar';
 import ProjectsList from '../components/ProjectsList';
 import SkillsList from '../components/SkillsList';
+import ContactMe from '../components/ContactMe';
 
 export default function Home() {
   return (
@@ -23,8 +24,9 @@ export default function Home() {
             <SkillsList />
           </section>
           <section id="contact" className="py-10">
-            {/* Add your ContactMe component or dummy section */}
-            <div className="text-center text-lg">Contact Me Section</div>
+          </section>
+          <section id="contact">
+            <ContactMe />
           </section>
         </div>
       </div>

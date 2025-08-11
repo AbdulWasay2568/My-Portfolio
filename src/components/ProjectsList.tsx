@@ -6,54 +6,58 @@ import youtube from '../assets/Images/Projects/youtube.jpg';
 import whatsApp from '../assets/Images/Projects/WhatsApp.jpg';
 
 export default function ProjectsList() {
-  const data = [
-    {
-      id: 1,
-      title: 'Dominos App Clone',
-      techStack: 'React Native, Typescript, Supabase',
-      imageUrl: dominos,
-      href: 'https://github.com/AbdulWasay2568/Dominos-Clone-Supabase',
-    },
-    {
-      id: 2,
-      title: 'Spotify Web Clone',
-      techStack:
-        'React.js, Typescript, Tailwind CSS',
-        imageUrl: spotify,
-        href: 'https://spotify-clone-black-two.vercel.app/',
-    },
-    {
-      id: 3,
-      title: 'WhatsApp Clone',
-      techStack: 'React.js, TypeScript, Tailwind CSS, Socket.IO, WebRTC, Express.js, PostgreSQL, Prisma ORM',
-      imageUrl: whatsApp,
-      href: 'https://github.com/AbdulWasay2568/WhatsApp-Web-Clone',
-    },
-    {
-      id: 4,
-      title: 'Object Detection and Classification',
-      techStack:
-        'YOLO v8',
-      imageUrl: objectDetection,
-      href: 'https://github.com/AbdulWasay2568/Object-Detection-and-Classification',
-    },
-    {
-      id: 5,
-      title: ' Eccomerce Website',
-      techStack: 'React.js, Typescript, Tailwind CSS, Express.js, Postgre SQL, Prisma ORM',
-      imageUrl: eCommerce,
-      href: 'https://github.com/AbdulWasay2568/Ecommerce-Full-Stack',
-    },
-    {
-      id: 6,
-      title: ' YouTube Web Clone',
-      techStack: 'React.js, Typescript, Tailwind CSS',
-      imageUrl: youtube,
-      href: 'https://github.com/AbdulWasay2568/YouTube-Clone',
-    },
+  const data = [ 
+  {
+    id: 1,
+    title: 'Dominos Web Clone',
+    techStack: 'React.js, Typescript, Tailwind CSS, Express.js, Supabase, Prisma ORM, Redux, Cloudinary',
+    imageUrl: dominos,
+    href: 'https://dominos-web-clone-frontend.vercel.app',
+  },
+  {
+    id: 2,
+    title: 'Dominos App Clone',
+    techStack: 'React Native, Typescript, Supabase',
+    imageUrl: dominos,
+    href: 'https://github.com/AbdulWasay2568/Dominos-Clone-Supabase',
+  },
+  {
+    id: 3,
+    title: 'Spotify Web Clone',
+    techStack: 'React.js, Typescript, Tailwind CSS',
+    imageUrl: spotify,
+    href: 'https://spotify-clone-black-two.vercel.app/',
+  },
+  {
+    id: 4,
+    title: 'WhatsApp Clone',
+    techStack: 'React.js, TypeScript, Tailwind CSS, Socket.IO, WebRTC, Express.js, PostgreSQL, Prisma ORM',
+    imageUrl: whatsApp,
+    href: 'https://github.com/AbdulWasay2568/WhatsApp-Web-Clone',
+  },
+  {
+    id: 5,
+    title: 'Object Detection and Classification',
+    techStack: 'YOLO v8',
+    imageUrl: objectDetection,
+    href: 'https://github.com/AbdulWasay2568/Object-Detection-and-Classification',
+  },
+  {
+    id: 6,
+    title: 'Eccomerce Website',
+    techStack: 'React.js, Typescript, Tailwind CSS, Express.js, Postgre SQL, Prisma ORM',
+    imageUrl: eCommerce,
+    href: 'https://github.com/AbdulWasay2568/Ecommerce-Full-Stack',
+  },
+  {
+    id: 7,
+    title: 'YouTube Web Clone',
+    techStack: 'React.js, Typescript, Tailwind CSS',
+    imageUrl: youtube,
+    href: 'https://github.com/AbdulWasay2568/YouTube-Clone',
+  },
+];
 
-  ];
-  
   
 return (
 <section className="grid gap-8 p-5 mt-5 md:p-1 lg:p-2">
