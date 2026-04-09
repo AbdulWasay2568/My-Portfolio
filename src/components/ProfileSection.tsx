@@ -12,10 +12,11 @@ export default function ProfileSection() {
 
         {/* Profile Description */}
         <div className="flex flex-col m-2 lg:ml-6">
-          <p className="font-bold text-2xl text-[#6366F1] text-center lg:text-left">Software Developer</p>
+          <p className="font-bold text-2xl text-[#6366F1] text-center lg:text-left">Full-Stack Developer</p>
           <p className="text-zinc-300 mt-3 text-sm lg:text-base text-center lg:text-left">
-            Enthusiastic and motivated Computer Science student with a keen interest in Artificial Intelligence and Software Development. 
-            Demonstrates exceptional problem-solving abilities and a robust proficiency in programming, algorithms, and data structures.
+            Passionate Full-Stack Developer experienced in building production-ready web and mobile applications.
+            Skilled in designing scalable backend architectures and intuitive frontend interfaces.
+            Strong focus on clean, maintainable code and delivering high quality software solutions.
           </p>
         </div>
       </div>
