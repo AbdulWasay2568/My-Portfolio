@@ -6,7 +6,7 @@ export interface ProjectData {
   longDescription: string;
   techStack: string[];
   image: string;
-  video?: string;
+  video?: string[];
   gallery: string[];
   github: string;
   website?: string;
@@ -18,15 +18,20 @@ export interface ProjectData {
   category?: string;
 }
 
-// Asset Imports
-import givioVideo from "../assets/projects/givio/videos/DonationSystemAdmin.mp4";
+//givio
+import donorAd from "../assets/projects/givio/videos/DonorAd.mp4";
+import donorHistory from "../assets/projects/givio/videos/DonorHistory.mp4";
+import leaderBoard from "../assets/projects/givio/videos/LeaderBoard.mp4";
+import ngoAd from "../assets/projects/givio/videos/NGOAd.mp4";
 
 import givio0 from "../assets/projects/givio/images/givio.png";
 import givio1 from "../assets/projects/givio/images/logo3.png";
 
+//dominos
 import dominosVideo from "../assets/projects/dominos-app/videos/DominosApp.mp4";
 import dominos0 from "../assets/projects/dominos-app/images/dominos.png";
 
+//whatsapp
 import whatsapp0 from "../assets/projects/whatsapp/images/WhatsApp.jpg";
 import whatsappVideo from "../assets/projects/whatsapp/videos/WhatsappWeb.mp4";
 
@@ -70,7 +75,7 @@ export const projectsByDomain: Record<string, ProjectData[]> = {
       longDescription: "Givio is a comprehensive mobile application designed to bridge the gap between donors and charitable organizations. Built with React Native and Expo, it features a seamless donation flow, real-time tracking of donation impact, and a secure payment gateway integration. The app also includes features for NGOs to post updates and for donors to follow their favorite causes.",
       techStack: ["React Native", "Expo", "TypeScript", "Node.js", "Express.js", "PostgreSQL", "Prisma"],
       image: givio0,
-      video: givioVideo,
+      video: [donorAd, donorHistory, leaderBoard, ngoAd],
       gallery: [givio1],
       github: "https://github.com/Awd-07/Givio",
       website: "https://givio.app",
@@ -92,7 +97,7 @@ export const projectsByDomain: Record<string, ProjectData[]> = {
       longDescription: "A feature-rich pizza ordering and delivery application that mimics the core functionality of the Dominos app. It includes a dynamic menu system, real-time order tracking, address management, and a smooth checkout process. The app emphasizes UI/UX with smooth animations and interactive elements.",
       techStack: ["React Native", "Redux", "Firebase", "TypeScript", "Tailwind CSS"],
       image: dominos0,
-      video: dominosVideo,
+      video: [dominosVideo],
       gallery: [],
       github: "https://github.com/Awd-07/Dominos-Clone",
       tagline: "The Perfect Slice, Just a Tap Away",
@@ -113,7 +118,7 @@ export const projectsByDomain: Record<string, ProjectData[]> = {
       longDescription: "A full-stack messaging application that replicates the WhatsApp user experience. Features include real-time chat using Socket.io, user authentication, status updates, and group chat capabilities. The project demonstrates advanced state management and real-time data synchronization.",
       techStack: ["React Native", "Node.js", "Socket.io", "MongoDB", "Express.js"],
       image: whatsapp0,
-      video: whatsappVideo,
+      video: [whatsappVideo],
       gallery: [],
       github: "https://github.com/Awd-07/Whatsapp-Clone",
       tagline: "Connecting People Instantly",
