@@ -39,8 +39,6 @@ import ecommerce0 from "../assets/projects/e-commerce/images/e-commerce.jpg";
 
 import regency0 from "../assets/projects/regency/images/regency.png";
 
-import spotify0 from "../assets/projects/spotify/images/spotify-clone.gif";
-
 import discord0 from "../assets/projects/discord/images/discord.png";
 
 import object0 from "../assets/projects/object-detection/images/object-detection.png";

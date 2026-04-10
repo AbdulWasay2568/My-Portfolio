@@ -1,6 +1,6 @@
 import { useState, useRef } from 'react';
 import { useParams, Link, useLocation } from 'react-router-dom';
-import { ArrowLeft, ExternalLink, Github, Play } from 'lucide-react';
+import { ArrowLeft, Play } from 'lucide-react';
 import StackIcon from 'tech-stack-icons';
 import { projectsByDomain, techStackIcons, ProjectData } from '../data/projects';
 
@@ -30,7 +30,7 @@ export default function ProjectDescription() {
   }
 
   const allMedia = [
-    ...(project.video ? [{ url: project.video, type: 'video' as const }] : []),
+    ...(project.video ? (Array.isArray(project.video) ? project.video : [project.video]).map(url => ({ url, type: 'video' as const })) : []),
     ...(project.gallery || []).map(url => ({ url, type: 'image' as const }))
   ];
 
@@ -87,9 +87,9 @@ export default function ProjectDescription() {
               <div className="relative min-h-[400px] md:min-h-[600px] flex items-center justify-center bg-black">
                 {currentMedia.type === 'video' ? (
                   <video
-                    key={currentMedia.url}
+                    key={Array.isArray(currentMedia.url) ? currentMedia.url[0] : currentMedia.url}
                     ref={videoRef}
-                    src={currentMedia.url}
+                    src={Array.isArray(currentMedia.url) ? currentMedia.url[0] : currentMedia.url}
                     autoPlay
                     muted
                     loop
@@ -98,8 +98,8 @@ export default function ProjectDescription() {
                   />
                 ) : (
                   <img
-                    key={currentMedia.url}
-                    src={currentMedia.url}
+                    key={currentMedia.url as string}
+                    src={currentMedia.url as string}
                     alt={`${project.title} - ${currentMediaIndex}`}
                     className="max-w-full max-h-[800px] w-auto h-auto object-contain"
                   />
