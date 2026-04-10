@@ -67,173 +67,171 @@ export const techStackIcons: Record<string, string> = {
 };
 
 export const projectsByDomain: Record<string, ProjectData[]> = {
-  "Mobile Apps": [
-    {
-      id: "givio",
-      title: "Givio",
-      description: "A secure donation platform with real-time impact tracking.",
-      longDescription: "Givio is a comprehensive mobile application designed to bridge the gap between donors and charitable organizations. Built with React Native and Expo, it features a seamless donation flow, real-time tracking of donation impact, and a secure payment gateway integration. The app also includes features for NGOs to post updates and for donors to follow their favorite causes.",
-      techStack: ["React Native", "Expo", "TypeScript", "Node.js", "Express.js", "PostgreSQL", "Prisma"],
-      image: givio0,
-      video: [donorAd, donorHistory, leaderBoard, ngoAd],
-      gallery: [givio1],
-      github: "https://github.com/Awd-07/Givio",
-      website: "https://givio.app",
-      tagline: "Empowering Charity through Transparency",
-      overview: "Givio is a mobile platform that simplifies the donation process while providing donors with real-time updates on how their contributions are being used.",
-      features: [
-        "Real-time donation tracking",
-        "Secure payment gateway integration",
-        "NGO impact updates and stories",
-        "User profile and donation history",
-        "Automated tax receipts"
-      ],
-      category: "Mobile App"
-    },
-    {
-      id: "dominos",
-      title: "Dominos Clone",
-      description: "Real-time pizza delivery app with interactive UI.",
-      longDescription: "A feature-rich pizza ordering and delivery application that mimics the core functionality of the Dominos app. It includes a dynamic menu system, real-time order tracking, address management, and a smooth checkout process. The app emphasizes UI/UX with smooth animations and interactive elements.",
-      techStack: ["React Native", "Redux", "Firebase", "TypeScript", "Tailwind CSS"],
-      image: dominos0,
-      video: [dominosVideo],
-      gallery: [],
-      github: "https://github.com/Awd-07/Dominos-Clone",
-      tagline: "The Perfect Slice, Just a Tap Away",
-      overview: "A comprehensive clone of the Dominos pizza ordering app, focusing on high-performance animations and real-time state management.",
-      features: [
-        "Interactive menu with customization",
-        "Real-time order status tracking",
-        "Firebase authentication",
-        "Geolocation-based store finder",
-        "Smooth cart and checkout flow"
-      ],
-      category: "Mobile App"
-    },
-    {
-      id: "whatsapp",
-      title: "WhatsApp Clone",
-      description: "Real-time messaging application with end-to-end simulation.",
-      longDescription: "A full-stack messaging application that replicates the WhatsApp user experience. Features include real-time chat using Socket.io, user authentication, status updates, and group chat capabilities. The project demonstrates advanced state management and real-time data synchronization.",
-      techStack: ["React Native", "Node.js", "Socket.io", "MongoDB", "Express.js"],
-      image: whatsapp0,
-      video: [whatsappVideo],
-      gallery: [],
-      github: "https://github.com/Awd-07/Whatsapp-Clone",
-      tagline: "Connecting People Instantly",
-      overview: "A real-time communication platform demonstrating the power of WebSockets and mobile-first full-stack development.",
-      features: [
-        "Instant messaging with Socket.io",
-        "Status updates and stories",
-        "Group chat management",
-        "User presence indicators",
-        "Image and file sharing"
-      ],
-      category: "Mobile App"
-    }
-  ],
   "Web Development": [
     {
-      id: "ecommerce",
-      title: "E-commerce Platform",
-      description: "A fully functional online marketplace with advanced filtering.",
-      longDescription: "This e-commerce platform provides a complete shopping experience with product listings, a sophisticated filter system, user profiles, and a secure checkout. It features an administrative dashboard for inventory management and order tracking.",
-      techStack: ["React.js", "Node.js", "Express.js", "PostgreSQL", "Prisma", "Tailwind CSS"],
+      id: "discord-bot",
+      title: "Discord Bot",
+      tagline: "Scalable Message Backup & Server Utility",
+      description: "Discord bot for automated message backup and server data management.",
+      longDescription: "Built a Discord bot for server-level message backup with advanced filtering capabilities, storing data in PostgreSQL using SQLAlchemy ORM. Designed for scalable multi-user environments with efficient data handling and structured storage.",
+      techStack: ["Discord", "Python", "PostgreSQL", "SQLAlchemy"],
+      image: discord0,
+      gallery: [],
+      github: "https://github.com/Awd-07/Discord-Bot",
+      overview: "A scalable backend-focused Discord bot designed for structured message storage and efficient server data management.",
+      features: [
+        "Server-level message backup system",
+        "Advanced filtering for messages (users, dates, content)",
+        "PostgreSQL integration using SQLAlchemy ORM",
+        "Scalable multi-user data handling"
+      ],
+      category: "Backend"
+    },
+    {
+      id: "elearning",
+      title: "E-Learning Platform",
+      tagline: "Knowledge sharing made seamless",
+      description: "Online learning platform for course creation and progress tracking.",
+      longDescription: "Built a comprehensive online learning platform enabling course creation, video streaming, and progress tracking. Developed a responsive frontend with Redux for efficient global state management and user experience optimization. Implemented backend APIs for courses, users, enrollments, and instructor management. Integrated authentication, authorization, Swagger documentation for a secure and scalable system.",
+      techStack: ["React.js", "Tailwind CSS", "Express.js", "TypeScript", "Prisma", "PostgreSQL", "Redux"],
       image: ecommerce0,
       gallery: [],
-      github: "https://github.com/Awd-07/E-commerce",
-      website: "https://shop-next-gen.vercel.app",
-      tagline: "Shop Smart, Shop Fast",
-      overview: "A modern web-based marketplace built for scale, featuring advanced search, filtering, and admin controls.",
+      github: "https://github.com/Awd-07/E-Learning",
+      overview: "A professional educational portal designed for instructors to manage content and students to track their learning journey.",
       features: [
-        "Advanced product filtering",
-        "User reviews and ratings",
-        "Admin dashboard for inventory",
-        "Secure checkout with Stripe",
-        "Responsive design for all devices"
+        "Course creation and video streaming",
+        "Student progress and enrollment tracking",
+        "Redux for optimized user experience",
+        "Secure authentication and authorization",
+        "Swagger API documentation"
       ],
       category: "Web App"
     },
     {
       id: "regency",
-      title: "Regency Estate",
-      description: "Luxury real estate platform for property management.",
-      longDescription: "Regency Estate is a high-end real estate portal that connects property buyers with luxury listings. It includes high-resolution image galleries, property comparison tools, and an integrated inquiry system for prospective buyers.",
-      techStack: ["React.js", "Firebase", "Tailwind CSS", "JavaScript"],
+      title: "Regency Suite Hotel System",
+      tagline: "Luxury Management for Modern Hospitality",
+      description: "Full-featured hotel management system with multi-portal access.",
+      longDescription: "Developed a full-featured hotel management system with dedicated Admin, Guest, Manager, and Front Desk portals. Implemented Room and Banquet booking, Loyalty points system, and role-based access control. Designed a modular MVT structure ensuring scalability, data integrity, and secure user management. Deployed on Hostinger for public access.",
+      techStack: ["Django", "MVT Architecture", "SQLite", "Python", "Bootstrap"],
       image: regency0,
       gallery: [],
       github: "https://github.com/Awd-07/Regency-Estate",
-      tagline: "Find Your Dream Luxury Home",
-      overview: "A premium real estate listing application designed with a focus on high-end visual presentation and lead generation.",
+      overview: "A modular hotel management ecosystem using Django's MVT architecture to handle complex booking flows and role-based permissions.",
       features: [
-        "High-definition image galleries",
-        "Property comparison tools",
-        "Contact agent integration",
-        "Advanced location search",
-        "Firebase real-time database"
+        "Admin, Guest, Manager, and Front Desk portals",
+        "Room and Banquet booking system",
+        "Customer loyalty points integration",
+        "Modular MVT architecture for scalability",
+        "Role-based access control (RBAC)"
       ],
       category: "Web App"
     },
     {
-      id: "spotify",
-      title: "Spotify Web Player",
-      description: "Music streaming interface with interactive controls.",
-      longDescription: "A web-based music player that integrates with the Spotify API. Users can browse their playlists, search for songs, and control playback directly from the interface. The design focuses on modern aesthetics and responsive layouts.",
-      techStack: ["React.js", "Spotify API", "Tailwind CSS", "JavaScript"],
-      image: spotify0,
+      id: "ecommerce",
+      title: "E-commerce Platform",
+      tagline: "Shop Smart, Shop Fast",
+      description: "Full-stack e-commerce system with authentication and checkout.",
+      longDescription: "Built a full-stack e-commerce platform using React.js, React Native, and Node.js. Features include user authentication, product catalogs, shopping cart functionality, and a payment checkout flow. Integrated Prisma with PostgreSQL for robust data management and consistent performance across web and mobile platforms.",
+      techStack: ["React.js", "React Native", "Express.js", "Prisma", "PostgreSQL", "Tailwind CSS"],
+      image: ecommerce0,
       gallery: [],
-      github: "https://github.com/Awd-07/Spotify-Clone",
-      tagline: "Your Music, Your Way",
-      overview: "A custom web player interface that leverages the Spotify Web API for a seamless listening experience.",
+      github: "https://github.com/Awd-07/E-commerce",
+      overview: "A unified commerce solution providing a seamless shopping experience through shared backend services for web and mobile clients.",
       features: [
-        "Playlist browsing and search",
-        "Custom playback controls",
-        "Real-time track progress",
-        "Responsive grid layout",
-        "API rate-limit handling"
+        "Full-stack web and mobile integration",
+        "Secure authentication and checkout",
+        "Shopping cart and order management",
+        "Database management with Prisma/PostgreSQL",
+        "Responsive cross-platform design"
       ],
       category: "Web App"
     }
   ],
-  "AI & Automation": [
+  "Mobile Apps": [
     {
-      id: "discord-bot",
-      title: "Discord AI Bot",
-      description: "Automated community moderator and utility bot.",
-      longDescription: "A multi-purpose Discord bot that leverages AI for community management. It features automated moderation, custom command creation, and integration with various APIs to provide real-time information to server members.",
-      techStack: ["Node.js", "Discord.js", "OpenAI API", "MongoDB"],
-      image: discord0,
-      gallery: [],
-      github: "https://github.com/Awd-07/Discord-Bot",
-      tagline: "Smater Servers with AI",
-      overview: "An automated assistant for Discord communities that uses natural language processing to moderate and help users.",
+      id: "givio",
+      title: "Givio - Donation System",
+      tagline: "Empowering Charity through Transparency",
+      description: "A complete donation management ecosystem connecting donors and NGOs.",
+      longDescription: "Built a complete donation management ecosystem connecting donors and NGOs through real-time interaction. Developed a mobile app for donors and NGOs along with a web-based admin dashboard featuring centralized state management. Implemented real-time messaging, donation and verification tracking, and deployed the backend on Vercel for scalable performance. Integrated robust input validation, authentication, authorization, Swagger API documentation, centralized error handling, and logging across all backend services.",
+      techStack: ["Express.js", "TypeScript", "Prisma", "React Native", "React.js", "Tailwind CSS", "Redux", "Socket.IO", "WebRTC"],
+      image: givio0,
+      video: [donorAd, donorHistory, leaderBoard, ngoAd],
+      gallery: [givio1],
+      github: "https://github.com/Awd-07/Givio",
+      website: "https://givio.app",
+      overview: "Givio is a full-stack donation platform designed to bridge the gap between donors and charitable organizations with real-time tracking and verified interactions.",
       features: [
-        "AI-powered moderation",
-        "Automated welcome messages",
-        "Custom command system",
-        "External API integration",
-        "User activity logging"
+        "Real-time interaction between donors and NGOs",
+        "Mobile app for donors/NGOs and Web Admin Dashboard",
+        "Real-time messaging and donation tracking",
+        "Swagger API documentation and centralized logging",
+        "Vercel deployment for scalable backend"
       ],
-      category: "Automation"
+      category: "Mobile App"
     },
     {
+      id: "dominos",
+      title: "Domino’s Clone",
+      tagline: "The Perfect Slice, Just a Tap Away",
+      description: "Domino’s-inspired web and mobile applications with dynamic menu and cart.",
+      longDescription: "Developed Domino’s-inspired web and mobile applications featuring user authentication, dynamic menu browsing, and cart management. Implemented Redux for global state management to ensure a seamless and consistent user experience across devices. Ensured consistent UI/UX across platforms with reusable components and integrated Supabase for backend services.",
+      techStack: ["React.js", "React Native", "TypeScript", "Supabase", "Express.js", "Prisma", "Tailwind CSS", "Redux"],
+      image: dominos0,
+      video: [dominosVideo],
+      gallery: [],
+      github: "https://github.com/Awd-07/Dominos-Clone",
+      overview: "A cross-platform clone of the Domino's ordering system, focusing on high-performance animations and real-time state synchronization.",
+      features: [
+        "Dynamic menu browsing and cart management",
+        "Redux for cross-device state management",
+        "Consistent UI/UX with reusable components",
+        "Supabase backend integration",
+        "User authentication and profile management"
+      ],
+      category: "Mobile App"
+    },
+    {
+      id: "whatsapp",
+      title: "WhatsApp Web Clone",
+      tagline: "Connecting People Instantly",
+      description: "Full-stack real-time messaging platform with audio/video calling.",
+      longDescription: "Developed a full-stack real-time messaging platform with live chat, audio/video calling, and file sharing. Integrated Redux for efficient state management of chats, users, and socket connections. Implemented modern messaging features like emoji reactions, message replies, presence indicators, and secure authentication. Integrated Socket.IO for live chat, WebRTC for peer-to-peer audio/video calling, and Cloudinary for file/image sharing.",
+      techStack: ["React.js", "TypeScript", "Tailwind CSS", "Express.js", "Prisma", "PostgreSQL", "Socket.IO", "WebRTC", "Redux"],
+      image: whatsapp0,
+      video: [whatsappVideo],
+      gallery: [],
+      github: "https://github.com/Awd-07/Whatsapp-Clone",
+      overview: "A sophisticated messaging clone implementing low-latency communication via WebSockets and peer-to-peer media streaming.",
+      features: [
+        "Real-time chat with Socket.IO",
+        "P2P Audio/Video calling with WebRTC",
+        "File/Image sharing with Cloudinary",
+        "Emoji reactions and message replies",
+        "Redux-based efficient state management"
+      ],
+      category: "Mobile App"
+    }
+  ],
+  "AI": [
+    {
       id: "object-detection",
-      title: "AI Object Detector",
+      title: "AI Object Detector (YOLOv8)",
+      tagline: "Real-time Detection at Scale",
       description: "Real-time visual recognition using machine learning.",
-      longDescription: "An AI-powered application that identifies objects in real-time through a camera feed. Built with TensorFlow.js, it can detect and label various objects with high accuracy, demonstrating the potential of on-device machine learning.",
-      techStack: ["Python", "TensorFlow", "OpenCV", "React.js"],
+      longDescription: "Implemented real-time detection using YOLOv8, Python, and OpenCV. The application identifies objects in real-time through a camera feed, demonstrating high accuracy and performance on-device. Ideal for security monitoring and automated vision tasks.",
+      techStack: ["Python", "YOLOv8", "OpenCV", "TensorFlow", "React.js"],
       image: object0,
       gallery: [],
       github: "https://github.com/Awd-07/Object-Detection",
-      tagline: "See the World through AI",
-      overview: "A real-time computer vision project that brings the power of TensorFlow.js to the web browser.",
+      overview: "A computer vision project focused on high-speed object identification using the state-of-the-art YOLOv8 architecture.",
       features: [
-        "Real-time object classification",
-        "Webcam feed integration",
-        "Bounding box visualization",
-        "On-device inference",
-        "Multi-object tracking"
+        "Real-time object detection with YOLOv8",
+        "OpenCV-based camera feed processing",
+        "High-accuracy labeling and tracking",
+        "Efficient on-device vision inference",
+        "Scalable for security/monitoring apps"
       ],
       category: "Artificial Intelligence"
     }

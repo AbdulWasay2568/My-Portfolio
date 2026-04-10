@@ -49,7 +49,7 @@ export default function NavBar() {
           
           <Link
             to="/resume"
-            className="text-zinc-300 hover:text-white transition-colors text-sm font-medium tracking-wide uppercase flex items-center gap-2"
+            className="lg:hidden flex items-center gap-2 text-zinc-300 hover:text-white transition-colors text-sm font-medium tracking-wide uppercase"
             onClick={() => setIsOpen(false)}
           >
             <FileText size={16} />
