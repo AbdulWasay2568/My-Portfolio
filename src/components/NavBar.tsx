@@ -1,5 +1,6 @@
 import { useState } from 'react';
-import { Menu, X, Mail } from 'lucide-react';
+import { Menu, X, Mail, FileText } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 export default function NavBar() {
   const [isOpen, setIsOpen] = useState(false);
@@ -9,11 +10,11 @@ export default function NavBar() {
   };
 
   const navLinks = [
-    { name: 'About Me', href: '#about' },
-    { name: 'Experience', href: '#experience' },
-    { name: 'Projects', href: '#projects' },
-    { name: 'Skills', href: '#skills' },
-    { name: 'Education', href: '#education' },
+    { name: 'About Me', href: '/#about' },
+    { name: 'Experience', href: '/#experience' },
+    { name: 'Projects', href: '/#projects' },
+    { name: 'Skills', href: '/#skills' },
+    { name: 'Education', href: '/#education' },
   ];
 
   return (
@@ -25,9 +26,9 @@ export default function NavBar() {
         </button>
 
         {/* Brand / Logo */}
-        <div className="text-xl font-bold text-white bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent">
+        <Link to="/" className="text-xl font-bold text-white bg-gradient-to-r from-indigo-500 to-purple-500 bg-clip-text text-transparent">
           AWD
-        </div>
+        </Link>
 
         {/* Nav Links */}
         <div
@@ -46,6 +47,15 @@ export default function NavBar() {
             </a>
           ))}
           
+          <Link
+            to="/resume"
+            className="text-zinc-300 hover:text-white transition-colors text-sm font-medium tracking-wide uppercase flex items-center gap-2"
+            onClick={() => setIsOpen(false)}
+          >
+            <FileText size={16} />
+            Resume
+          </Link>
+          
           {/* Mobile only Hire Me */}
           <a
             href="#contact"
@@ -57,8 +67,15 @@ export default function NavBar() {
           </a>
         </div>
 
-        {/* Desktop Hire Me Button */}
-        <div className="hidden lg:block">
+        {/* Desktop Buttons */}
+        <div className="hidden lg:flex items-center gap-4">
+          <Link
+            to="/resume"
+            className="flex items-center gap-2 text-zinc-300 hover:text-white text-sm font-medium transition-colors"
+          >
+            <FileText size={18} />
+            Resume
+          </Link>
           <a
             href="#contact"
             className="flex items-center gap-2 bg-indigo-500 hover:bg-indigo-600 px-6 py-2 rounded-full text-sm font-bold transition-all duration-300 shadow-lg shadow-indigo-500/20 active:scale-95"

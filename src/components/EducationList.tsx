@@ -1,5 +1,5 @@
 import { GraduationCap } from 'lucide-react';
-import { educationData } from '../data';
+import { educationData } from '../data/education';
 
 export default function EducationList() {
   return (

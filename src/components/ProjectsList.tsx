@@ -1,9 +1,8 @@
 import { Link } from 'react-router-dom';
-import { projects, projectsByDomain } from '../data';
+import { projectsByDomain } from '../data/projects';
 
 export default function ProjectsList() {
-  // flattened projects (for computing global index) and grouped projects
-  const flat = projects;
+  const flat = Object.values(projectsByDomain).flat();
 
   return (
     <section className="grid gap-8 p-5 mt-5 md:p-1 lg:p-2">
@@ -19,7 +18,7 @@ export default function ProjectsList() {
                 <Link key={`${card.title}-${index}`} to={`/project/${index}`} state={{ project: card, index }}>
                   <div className="flex flex-col overflow-hidden gap-3 bg-white text-zinc-800 rounded-lg overflow-ellipsis hover:shadow-lg transition-all duration-300 ease-in-out cursor-pointer">
                     <img
-                      src={card.imageUrl}
+                      src={card.image}
                       alt={card.title}
                       width={700}
                       height={700}

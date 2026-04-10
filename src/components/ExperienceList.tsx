@@ -1,5 +1,5 @@
 import { Briefcase } from 'lucide-react';
-import { experienceData } from '../data';
+import { experienceData } from '../data/experience';
 
 export default function ExperienceList() {
   return (

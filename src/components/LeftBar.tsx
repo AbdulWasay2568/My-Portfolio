@@ -1,5 +1,5 @@
 import { FaInstagram, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
-import { socialLinks } from "../data";
+import { socialLinks } from "../data/socials";
 
 export default function LeftBar() {
   const getIcon = (platform: string) => {

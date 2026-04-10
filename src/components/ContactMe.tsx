@@ -1,6 +1,6 @@
 import React, { useState, FormEvent } from "react";
 import { FaInstagram, FaTwitter, FaLinkedin, FaGithub } from "react-icons/fa";
-import { socialLinks } from "../data";
+import { socialLinks } from "../data/socials";
 
 export default function ContactMe() {
   const [formData, setFormData] = useState({
